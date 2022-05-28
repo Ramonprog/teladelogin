@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header*/
+header{
+    display: flex;
+    justify-content: center;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+
+}
+.header{
+    display: flex;
+    height: 55px;
+    width:1100px ;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    color: #9342e4;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+.links a{
+    display: block;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    color: #9342e4;
+}
+.links a:hover{
+    background-color: #c590fa;
+    transition: .2s;
+    color: #532285;
+}
+
+body{
+    height: 100vh;
+    background-color: #c590fa;
+}
+h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c590fa;
+}
+.leftside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightside{
+    width: 300px;
+    margin-left: 10%;
+}
+.rightside label{
+    display: block;
+    margin-bottom: 8px;
+}
+.rightside input{
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    outline: 0;
+}
+
+
+.rightside form fieldset legend{
+    font-size: 20px;
+}
+.leftside img{
+    max-width: 600px;
+    height: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#btn{
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 40%;
+}
+#btn:hover{
+    background-color: #d1cece;
+}
+@media (max-width:1050px){
+    .leftside img{
+        width: 400px;
+    }
+    .rightside{
+        width: 200px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}

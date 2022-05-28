@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulario</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+            <h2>Logo</h2>
+            </div>
+            <nav>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Gallery</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="screen">
+        <div class="leftside">
+            <img src="assets/svg/img/blogging.png"width="600px" alt="">
+        </div>
+        <div class="rightside">
+            
+            <h1>Crie uma conta</h1>
+            <form method="post" class="validador">
+                
+                   
+                <label>
+                    Apelido: <br>
+                    <input type="text" id="name" required size="15" pattern="[a-z]{4,15}" title="Apelido curto">
+                    
+                 </label>
+                <label>
+                       Seu e-mail: <br> 
+                    <input type="email" id="email" name="email" required
+                    pattern="\S+@\S+\.\S+"
+                    title="Digite um e-mail valido" >
+                </label>
+                <label>
+                    Sua senha: <br> 
+                    <input type="password" id="password" name="password"required 
+                    pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$"
+                    title="">
+                </label>
+                <label >
+                     <input type="submit" id="btn" value="Cadatrar">
+                </label>
+            </form>
+            <div>
+                Já tem uma conta? <a href="#">Faça o Login</a>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
